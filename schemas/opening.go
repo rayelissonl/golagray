@@ -18,10 +18,11 @@ type Opening struct {
 
 type OpeningResponse struct {
 	ID        uint      `json:"id"`
-	CreatedAt time.Time `json:"created_at"`
-	UpdatedAt time.Time `json:"updated_at"`
+	CreatedAt time.Time `json:"createdAt"`
+	UpdatedAt time.Time `json:"updatedAt"`
+	DeletedAt time.Time `json:"deteledAt,omitempty"`
 	Role      string    `json:"role"`
-	Company   string    `json:"deteledAt,omitempty"`
+	Company   string    `json:"company"`
 	Location  string    `json:"location"`
 	Remote    bool      `json:"remote"`
 	Link      string    `json:"link"`

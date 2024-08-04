@@ -11,7 +11,7 @@ var (
 	db     *gorm.DB
 )
 
-func InitializeHadler() {
+func InitializeHandler() {
 	logger = config.GetLogger("handler")
 	db = config.GetSQLite()
 }
